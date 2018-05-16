@@ -98,7 +98,7 @@
 	    <artifactId>jdbc-driver</artifactId>
 	    <version>12</version>
 	    <scope>system</scope>
-	    <systemPath>C:\Users\Nicolas\Documents\Projetos\ambiente\ojdbc8.jar</systemPath>
+	    <systemPath>C:/Users/Nicolas/Documents/Projetos/ambiente/ojdbc8.jar</systemPath>
 	</dependency>
   </dependencies>
   <build>

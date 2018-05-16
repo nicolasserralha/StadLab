@@ -28,7 +28,7 @@ public class Cliente {
 
 	@Id
 	@SequenceGenerator(name="Cliente", sequenceName="sq_tb_cliente",allocationSize=1)
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+/*	@GeneratedValue(strategy = GenerationType.IDENTITY)*/
 	@Column(name="id_cliente")
 	private Integer id;
 	
