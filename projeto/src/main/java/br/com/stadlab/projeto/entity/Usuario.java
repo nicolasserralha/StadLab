@@ -16,7 +16,6 @@ public class Usuario {
 	
 	public Usuario() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Usuario(Integer id, String usuario, String senha) {

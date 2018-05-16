@@ -24,7 +24,6 @@ public class Cliente {
 
 	public Cliente() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Id
