@@ -20,7 +20,7 @@ public class Estabelecimento {
 	@Column(name="id_estabelecimento")
 	private Integer id;
 	
-	@Column(name="nome_estabelecimento", length=25, nullable=false)
+	@Column(name="nm_estabelecimento", length=30, nullable=false)
 	private String nome;
 
 	@JoinColumn(name = "id_tp_estabelecimento")

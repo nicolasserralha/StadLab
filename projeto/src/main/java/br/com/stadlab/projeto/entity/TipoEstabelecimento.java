@@ -32,7 +32,7 @@ public class TipoEstabelecimento {
 	@Column(name="id_tp_estabelecimento")
 	private Integer id;
 	
-	@Column(name="nm_tp_estabelecimento", length=25, nullable=false)
+	@Column(name="nm_tp_estabelecimento", length=30, nullable=false)
 	private String nome;
 	
 	@OneToMany(mappedBy = "tipo")
