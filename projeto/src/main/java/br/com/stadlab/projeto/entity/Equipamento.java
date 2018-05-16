@@ -17,7 +17,6 @@ public class Equipamento {
 
 	@Id
 	@SequenceGenerator(name="Equipamento", sequenceName="sq_tb_equipamento",allocationSize=1)
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id_equipamento")
 	private Integer id;
 	

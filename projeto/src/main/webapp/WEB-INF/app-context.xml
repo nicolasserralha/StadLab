@@ -14,8 +14,8 @@ http://www.springframework.org/schema/tx
 http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
 
 <!-- Essa parte é pra informar ao spring onde estão as classes controladoras -->
-
 <context:component-scan base-package="br.com.stadlab.projeto.controller" />
+
 
 <!-- Essa parte é pra habilitar as annotations -->
 <mvc:annotation-driven /> 
