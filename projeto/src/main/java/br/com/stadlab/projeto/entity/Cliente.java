@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -44,6 +45,8 @@ public class Cliente {
 	@Column(name="nr_celular")
 	private String celular;
 	
+	@OneToOne(mappedBy="cliente")
+	private Usuario usuario;
 	
 	public Integer getId() {
 		return id;
@@ -85,7 +88,13 @@ public class Cliente {
 		this.celular = celular;
 	}
 
-	
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
 
 }
  
