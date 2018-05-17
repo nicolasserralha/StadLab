@@ -4,6 +4,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import br.com.stadlab.projeto.entity.Cliente;
+import br.com.stadlab.projeto.entity.TipoEstabelecimento;
+
 public class Teste {
 
 	public static void main(String[] args) {
@@ -12,6 +15,11 @@ public class Teste {
 		try {
 			EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("stadlab");
 			em = fabrica.createEntityManager();
+			
+			TipoEstabelecimento tipoEstabelecimento = new TipoEstabelecimento();
+			tipoEstabelecimento.setNome("teste");
+			
+			em.persist(tipoEstabelecimento);
 
 		} catch (Exception e) {
 			
