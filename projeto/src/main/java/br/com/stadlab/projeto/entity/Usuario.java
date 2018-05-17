@@ -27,6 +27,7 @@ public class Usuario {
 
 	@Id
 	@SequenceGenerator(name="Usuario", sequenceName="sq_tb_usuario",allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="Usuario")
 	@Column(name="id_usuario")
 	private Integer id;
 	

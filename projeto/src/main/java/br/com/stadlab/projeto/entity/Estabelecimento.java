@@ -9,6 +9,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+import org.hibernate.validator.constraints.ConstraintComposition;
 
 @Entity
 @Table(name="tb_estabelecimento")
@@ -16,6 +19,7 @@ public class Estabelecimento {
 	
 	@Id
 	@SequenceGenerator(name="Estabelecimento", sequenceName="sq_tb_estabelecimento",allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="Estabelecimento")
 	@Column(name="id_estabelecimento")
 	private Integer id;
 	

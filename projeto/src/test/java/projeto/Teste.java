@@ -3,8 +3,6 @@ package projeto;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-
-import br.com.stadlab.projeto.entity.Cliente;
 import br.com.stadlab.projeto.entity.TipoEstabelecimento;
 
 public class Teste {
@@ -15,11 +13,13 @@ public class Teste {
 		try {
 			EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("stadlab");
 			em = fabrica.createEntityManager();
-			
 			TipoEstabelecimento tipoEstabelecimento = new TipoEstabelecimento();
 			tipoEstabelecimento.setNome("teste");
 			
+			em.getTransaction().begin();
+			
 			em.persist(tipoEstabelecimento);
+			
 
 		} catch (Exception e) {
 			
@@ -30,7 +30,9 @@ public class Teste {
 			e.printStackTrace();
 		}
 		
+		
 		if(em != null) {
+			em.getTransaction().commit();
 			em.close();
 		}
 		

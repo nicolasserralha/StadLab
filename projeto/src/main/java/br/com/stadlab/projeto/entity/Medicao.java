@@ -22,6 +22,7 @@ public class Medicao {
 	
 	@Id
 	@SequenceGenerator(name="Medicao", sequenceName="sq_tb_medicao",allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="Medicao")
 	@Column(name="id_medicao")
 	private Integer id;
 
