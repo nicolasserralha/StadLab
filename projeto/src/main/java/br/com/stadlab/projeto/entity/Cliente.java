@@ -13,9 +13,8 @@ import javax.persistence.Table;
 @Table(name="tb_cliente")
 public class Cliente {
 	
-	public Cliente(Integer id, String nome, String cpf, String email, String celular) {
+	public Cliente(String nome, String cpf, String email, String celular) {
 		super();
-		this.id = id;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.email = email;
